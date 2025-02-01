@@ -159,7 +159,7 @@ video {
     gap: 25px;
   } 
 
-  .logo-box__image {
+  .logo-box {
     width: 179px;
     height: 128px;
     background-color: #F3F3F3;
@@ -170,13 +170,15 @@ video {
     padding: 5px;
     gap: 10px;
   }
-<<<<<<< HEAD
-=======
+
+  .logo-box__image {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
 
 
   
->>>>>>> 87c918848df8b3d60ea291ff94b134d9b4afe6ba
 
 /* ==========================================================================
    Helper classes
