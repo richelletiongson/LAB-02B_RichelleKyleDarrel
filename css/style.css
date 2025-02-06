@@ -160,33 +160,13 @@ video {
 
   .section__contentimages {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    width: auto;
-    max-width: max-content;
-    place-items: center;
-    margin: 0px auto 60px;
-    gap: 16px; 
-  }
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1010px; 
+    margin: 0 auto 60px;
+    gap: 25px;
+  } 
 
-  @media screen and (min-width: 632px) and (max-width: 1439px){
-    .section__contentimages {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      gap: 16px 16px; 
-    } 
-  }
-  @media screen and (min-width: 1440px) {
-    .section__contentimages {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: repeat(2, 1fr); 
-      gap: 32px 32px;
-    }  
-  }
-
-  
-
-  .logo-box {
+  .logo-box__image {
     width: 179px;
     height: 128px;
     background-color: #F3F3F3;
@@ -203,6 +183,9 @@ video {
     max-height: 100%;
   }
 
+
+
+  
 
 
   
@@ -253,22 +236,6 @@ video {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
