@@ -14,11 +14,18 @@
   box-sizing: border-box;
 }
 
-html, body {
+ html, body {
+  height: 100vh;
   color: #222;
   font-family: "Ubuntu", serif;
-  /*font-size: 1em;*/
   line-height: 1.4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @font-face {
@@ -153,11 +160,31 @@ video {
 
   .section__contentimages {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    max-width: 1010px; 
-    margin: 0 auto 60px;
-    gap: 25px;
-  } 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    width: auto;
+    max-width: max-content;
+    place-items: center;
+    margin: 0px auto 60px;
+    gap: 16px; 
+  }
+
+  @media screen and (min-width: 632px) and (max-width: 1439px){
+    .section__contentimages {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 16px 16px; 
+    } 
+  }
+  @media screen and (min-width: 1440px) {
+    .section__contentimages {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(2, 1fr); 
+      gap: 32px 32px;
+    }  
+  }
+
+  
 
   .logo-box {
     width: 179px;
