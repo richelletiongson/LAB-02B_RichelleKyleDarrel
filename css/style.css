@@ -14,11 +14,18 @@
   box-sizing: border-box;
 }
 
-html, body {
+ html, body {
+  height: 100vh;
   color: #222;
   font-family: "Ubuntu", serif;
-  /*font-size: 1em;*/
   line-height: 1.4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @font-face {
@@ -175,7 +182,7 @@ video {
     }
   }
 
-  .logo-box {
+  .logo-box__image {
     width: 179px;
     height: 128px;
     background-color: #F3F3F3;
@@ -185,6 +192,11 @@ video {
     align-items: center;
     padding: 5px;
     gap: 10px;
+  }
+
+  .logo-box__image {
+    max-width: 100%;
+    max-height: 100%;
   }
 
 
