@@ -182,8 +182,12 @@ video {
     max-height: 100%;
   }
 
-  .nav_background{
+  .nav_background {
     background-color: #ffffff;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
   }
 
   .slider_background{
@@ -203,6 +207,57 @@ video {
     height: 598px;
   }
 
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 210px;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-start;
+  }
+  
+  .nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: flex-end;
+    width: 134px;
+    height: 96px;
+    color: #ffffff;
+    padding-right: 15px;
+  }
+  
+  .logo{
+    color: #4D4D4D;
+    font-size: 32px;
+    font-family: "Ubuntu", serif;
+  }
+  
+  .home_button {
+    background-color: #25C389;
+  }
+  
+  .portfolio_button {
+    background-color: #FFB901;
+  }
+  
+  .blog_button {
+    background-color: #DE6262;
+  }
+  
+  .quo-vadis_button {
+    background-color: #19B2DE;
+  }
+  
+  .lets-chat_button {
+    background-color: #265787;
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
