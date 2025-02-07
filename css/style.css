@@ -182,6 +182,7 @@ video {
     max-height: 100%;
   }
 
+/* Background Colours */
   .nav_background {
     background-color: #ffffff;
     padding: 10px 20px;
@@ -207,6 +208,7 @@ video {
     height: 598px;
   }
 
+  /* Main Menu */
   .nav {
     display: flex;
     justify-content: flex-end;
@@ -308,6 +310,7 @@ video {
     align-self: stretch;
   }
 
+/* Slider Section */
   .banner{
     display:flex;
     justify-content: flex-end;
@@ -334,7 +337,7 @@ video {
     width: 315px;
   }
 
-  /* Tablet Media Queries */
+/* Tablet Media Queries */
 @media only screen and (max-width: 632px){
   .nav-item{
     display: flex;
