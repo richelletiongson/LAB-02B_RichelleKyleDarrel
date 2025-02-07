@@ -165,23 +165,6 @@ video {
     margin: 0 auto 60px;
     gap: 25px;
   } 
-
-  .section__logocontent {
-    display: flex;
-    height: 376px;
-    padding: 0px 16px;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
-  @media screen and (max-width: 631px) {
-    .section__mobilehidden {
-      display: none;
-    }
-  }
-
   .logo-box__image {
     width: 179px;
     height: 128px;
