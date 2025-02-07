@@ -171,72 +171,139 @@ video {
     gap: 10px;
   }
 
-  .background_color-bar {
-  /* BG_ColourBar */
+  .footer__content {
+    position: bottom;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
 
-position: absolute;
-width: 272px;
-height: 17px;
-right: 960px;
-top: 581px;
+    background: #0E2E4E;
+  }
 
+  .footer-figure__caption {
+  width: 546px;
+  height: 72px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  }
 
+  .aboutus__par {
+      /* Footer_About_Content */
 
-/* Vector */
+  width: 232px;
+  height: 246px;
 
-position: absolute;
-width: 54.4px;
-height: 17px;
-left: 425.6px;
-bottom: 0px;
+  /* Footer_body */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
 
-background: #166BA2;
-
-
-/* Vector */
-
-position: absolute;
-width: 54.4px;
-height: 17px;
-left: 371.2px;
-bottom: 0px;
-
-background: #1691BD;
-
-
-/* Vector */
-
-position: absolute;
-width: 54.4px;
-height: 17px;
-left: 316.8px;
-bottom: 0px;
-
-background: #DE6262;
+  color: #FFFFFF;
 
 
-/* Vector */
-
-position: absolute;
-width: 54.4px;
-height: 17px;
-left: 262.4px;
-bottom: 0px;
-
-background: #FFB901;
-
-
-/* Vector */
-
-position: absolute;
-width: 54.4px;
-height: 17px;
-left: 208px;
-bottom: 0px;
-
-background: #25C389;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
 
   }
+
+  .mastodon__par {
+    /* @Minions - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. */
+
+  width: 320px;
+  height: 98px;
+
+  /* Mastodon_Toot */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 14px;
+  /* or 156% */
+  text-align: justify;
+
+  color: #1BADE6;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+
+  }
+
+  .background_color-bar {
+  position: bottom;
+  width: 272px;
+  height: 17px;
+  right: 960px;
+  top: 581px;
+  }
+
+  .background_blue-bar {
+  position: bottom;
+  width: 54.4px;
+  height: 17px;
+  left: 425.6px;
+  bottom: 0px;
+
+  background: #166BA2;
+  }  
+
+  .background_light-blue-bar {
+  position: bottom;
+  width: 54.4px;
+  height: 17px;
+  left: 371.2px;
+  bottom: 0px;
+
+  background: #1691BD;
+  }
+
+  .background_red-bar {
+  position: bottom;
+  width: 54.4px;
+  height: 17px;
+  left: 316.8px;
+  bottom: 0px;
+
+  background: #DE6262;
+  }
+
+  .background_orange-bar {
+  position: bottom;
+  width: 54.4px;
+  height: 17px;
+  left: 262.4px;
+  bottom: 0px;
+
+  background: #FFB901;
+  }
+
+  .background_green-bar {
+  position: bottom;
+  width: 54.4px;
+  height: 17px;
+  left: 208px;
+  bottom: 0px;
+
+  background: #25C389;
+  }
+
 
 <<<<<<< HEAD
 =======
