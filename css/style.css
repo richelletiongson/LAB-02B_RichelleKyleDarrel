@@ -176,6 +176,11 @@ video {
     flex-wrap: wrap;
   }
 
+  .logo-box__image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
   @media screen and (max-width: 631px) {
     .section__mobilehidden {
       display: none;
@@ -193,12 +198,6 @@ video {
     padding: 5px;
     gap: 10px;
   }
-
-  .logo-box__image {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
 
 
   
