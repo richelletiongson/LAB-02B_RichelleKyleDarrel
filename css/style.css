@@ -186,7 +186,22 @@ video {
     background-color: #ffffff;
   }
 
+  .slider_background{
+    background-color: #EBEBEB;
+    width: 1441px;
+    height: 512px;
+  }
   
+  .section_background{
+    background-color: #ffffff;
+    color: #3C3C3C;
+  }
+  
+  .footer_background{
+    background-color: #0E2E4E;
+    width: 1440px;
+    height: 598px;
+  }
 
 /* ==========================================================================
    Helper classes
