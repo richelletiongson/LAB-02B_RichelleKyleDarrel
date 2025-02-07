@@ -170,6 +170,74 @@ video {
     padding: 5px;
     gap: 10px;
   }
+
+  .background_color-bar {
+  /* BG_ColourBar */
+
+position: absolute;
+width: 272px;
+height: 17px;
+right: 960px;
+top: 581px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 54.4px;
+height: 17px;
+left: 425.6px;
+bottom: 0px;
+
+background: #166BA2;
+
+
+/* Vector */
+
+position: absolute;
+width: 54.4px;
+height: 17px;
+left: 371.2px;
+bottom: 0px;
+
+background: #1691BD;
+
+
+/* Vector */
+
+position: absolute;
+width: 54.4px;
+height: 17px;
+left: 316.8px;
+bottom: 0px;
+
+background: #DE6262;
+
+
+/* Vector */
+
+position: absolute;
+width: 54.4px;
+height: 17px;
+left: 262.4px;
+bottom: 0px;
+
+background: #FFB901;
+
+
+/* Vector */
+
+position: absolute;
+width: 54.4px;
+height: 17px;
+left: 208px;
+bottom: 0px;
+
+background: #25C389;
+
+  }
+
 <<<<<<< HEAD
 =======
 
