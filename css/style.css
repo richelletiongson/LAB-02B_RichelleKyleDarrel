@@ -169,6 +169,12 @@ video {
     gap: 16px; 
   }
 
+  @media screen and (max-width: 631px) {
+    .section__mobilehidden {
+      display: none;
+    }
+  }
+
   @media screen and (min-width: 632px) and (max-width: 1439px){
     .section__contentimages {
       grid-template-columns: 1fr 1fr;
@@ -183,17 +189,23 @@ video {
       gap: 32px 32px;
     }  
   }
+
+  .section__logocontent {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    place-self: center;
+    padding: 5px;
+    gap: 10px;
+  }
   
-  .logo-box__image {
+  .logo-box {
     width: 179px;
     height: 128px;
     background-color: #F3F3F3;
     display: flex;  
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    gap: 10px;
   }
 
   .logo-box__image {
