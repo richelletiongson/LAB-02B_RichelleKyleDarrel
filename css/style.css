@@ -77,8 +77,6 @@ video {
    } /*font not working*/
 
    .section__content {
-    max-width: 1010 px;
-    height: 537 px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -90,16 +88,12 @@ video {
    .calendar-item {
     font-family: "Ubuntu", serif;
     font-weight: 400;
-    width: 320px;
-    height: 256px;
     color: white;
     background-color: burlywood; /*place-holder*/
     position: relative;
-   }
+   } 
 
    .calendar-item__date {
-    width: 56px;
-    height: 34.28px;
     text-align: center;
     background-color: #D8605F;
     display: flex;
@@ -109,22 +103,20 @@ video {
    }
 
    .calendar-item__heading { 
-    font-size: 16px;
     font-weight: 300;
-    line-height: 18.38px;
+    line-height: 18.8;
     margin: 0;
    }
 
   .calendar-item__subtitle {
-    font-size: 8px;
-    font-weight: 300; 
+    font-weight: 300;
     line-height: 9.19px;
     margin: 0;
+    position: relative;
+    top: -141px;
   }
 
   .calendar-item__info {
-    width: 320px;
-    height: 48px;
     text-align: left;
     font-weight: 400;
     background-color: #19B2DE;
@@ -137,17 +129,25 @@ video {
     padding-right: 16px;
   }
 
+  .calendar-item__headinginfo { 
+    font-weight: 300;
+    line-height: 18.8;
+    margin: 0;
+   }
+
   .calendar-item__topic {
     font-size: 11px;
     font-weight: 300;
     line-height: 12.64px;
     margin: 0;
+    position: relative;
+    top: -139px;
   }
 
   .calendar-item__icon {
     width: 28px;
     height: 28px;
-    background-color: #1596BD; /*place-holder for calendar image*/
+    background-color: #1596BD;
     justify-self: end;
     margin-left: auto;
   }
@@ -173,7 +173,39 @@ video {
     .section__mobilehidden {
       display: none;
     }
+    .calendar-item {
+      width: 400px;
+      height: 288px;
+     }
+     .calendar-item__date {
+      width: 50px;
+      height: 54px;
+     }
+     .calendar-item__heading { 
+      font-size: 20px;
+     }
+    .calendar-item__subtitle {
+      font-size: 8px;
+      position: relative;
+      top: -178px;
+    }
+    .calendar-item__info {
+      width: 400px;
+      height: 54px;
+    }
+    .calendar-item__headinginfo { 
+      font-size: 16px;
+     }
+    .calendar-item__topic {
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 12.64px;
+      margin: 0;
+      position: relative;
+      top: -140px;
+    }
   }
+  
 
   @media screen and (min-width: 632px) and (max-width: 1439px){
     .section__contentimages {
@@ -183,7 +215,7 @@ video {
     } 
     .section__logocontent {
       display: flex;
-      width: 60%;   
+      width: 75%;   
       justify-self: center;
       padding: 0 16px;
       align-items: flex-start;
@@ -191,9 +223,71 @@ video {
       gap: 16px;
       flex-wrap: wrap;
     }
+    .calendar-item__info {
+      width: 600px;
+      height: 69px;
+    }
+    .calendar-item {
+      width: 292px;
+      height: 256px;
+     }
+     .calendar-item__date {
+      width: 51px;
+      height: 34px;
+     }
+     .calendar-item__heading { 
+      font-size: 16px;
+     }
+    .calendar-item__subtitle {
+      font-size: 8px;
+    }
+    .calendar-item__info {
+      width: 292px;
+      height: 48px;
+    }
     .logo-box {
       width: 189px;
       height: 128px;
+    }
+    .calendar-item__topic {
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 12.64px;
+      margin: 0;
+    }
+    #firstcalendar-item {
+      width: 600px;
+      height: 367px;
+      margin: auto 100% auto 100%;
+      flex-shrink: 0;   
+    }
+    #firstcalendar-item__date {
+      width: 83px;
+      height: 64px;
+    }
+    #firstcalendar-item__heading { 
+      font-size: 28px;
+     }
+    #firstcalendar-item__headinginfo {
+      font-size: 24px;
+    }
+    #firstcalendar-item__subtitle {
+      font-size: 14px;
+      position: relative;
+      top: -245px;
+    }
+    #firstcalendar-item__info {
+      width: 600px;
+      height: 69px;
+    }
+    #firstcalendar-item__topic {
+      font-size: 14px;
+      position: relative;
+      top: -210px;
+    }
+    #firstcalendar-item__icon {
+      width: 36px;
+      height: 36px;
     }
   }
 
@@ -215,6 +309,30 @@ video {
     .logo-box {
       width: 179px;
       height: 128px;
+    }
+    .calendar-item {
+      width: 320px;
+      height: 256px;
+     }
+     .calendar-item__date {
+      width: 56px;
+      height: 34.28px;
+     }
+     .calendar-item__heading { 
+      font-size: 16px;
+     }
+    .calendar-item__subtitle {
+      font-size: 8px;
+    }
+    .calendar-item__info {
+      width: 320px;
+      height: 48px;
+    }
+    .calendar-item__topic {
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 12.64px;
+      margin: 0;
     }
   }
 
