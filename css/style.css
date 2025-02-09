@@ -204,8 +204,11 @@ video {
       position: relative;
       top: -140px;
     }
+    .work-box {
+      width: 400px;
+      height: 256px;
+    }
   }
-  
 
   @media screen and (min-width: 632px) and (max-width: 1439px){
     .section__contentimages {
@@ -289,6 +292,10 @@ video {
       width: 36px;
       height: 36px;
     }
+    .work-box {
+      width: 292px;
+      height: 256px;
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -333,6 +340,10 @@ video {
       font-weight: 300;
       line-height: 12.64px;
       margin: 0;
+    }
+    .work-box {
+      width: 320px;
+      height: 256px;
     }
   }
 
