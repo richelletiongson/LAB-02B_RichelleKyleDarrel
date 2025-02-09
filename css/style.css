@@ -210,29 +210,32 @@ video {
 
   }
 
+  .footer-section__About_Us_heading {
+    color: #FFB901;
+  }
+
+  .footer-section__Instagram_heading {
+    color: #DE6262;
+  }
+
+  .footer-section__Mastodon_heading {
+    color: #1691BD;
+  }
+
   .mastodon__par {
-  
   width: 320px;
   height: 98px;
-
-  /* Mastodon_Toot */
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 9px;
   line-height: 14px;
-  /* or 156% */
   text-align: justify;
-
-  color: #1BADE6;
-
-
-  /* Inside auto layout */
+  color: black;
   flex: none;
   order: 2;
   align-self: stretch;
   flex-grow: 0;
-
   }
 
   
