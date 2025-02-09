@@ -15,7 +15,7 @@
 }
 
  html, body {
-  height: 100vh;
+  min-height: 100vh;
   color: #222;
   font-family: "Ubuntu", serif;
   line-height: 1.4;
@@ -24,7 +24,7 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -181,33 +181,50 @@ video {
       grid-template-rows: repeat(3, 1fr);
       gap: 16px 16px; 
     } 
+    .section__logocontent {
+      display: flex;
+      width: 60%;   
+      justify-self: center;
+      padding: 0 16px;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo-box {
+      width: 189px;
+      height: 128px;
+    }
   }
+
   @media screen and (min-width: 1440px) {
     .section__contentimages {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: repeat(2, 1fr); 
       gap: 32px 32px;
     }  
+    .section__logocontent{
+      display: flex;
+      padding: 0px 16px;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 32px;
+      flex-wrap: wrap;
+      place-self: center;
+    }
+    .logo-box {
+      width: 179px;
+      height: 128px;
+    }
   }
 
-  .section__logocontent {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    place-self: center;
-    padding: 5px;
-    gap: 10px;
-  }
-  
   .logo-box {
-    width: 179px;
-    height: 128px;
     background-color: #F3F3F3;
     display: flex;  
     justify-content: center;
     align-items: center;
   }
-
+  
   .logo-box__image {
     max-width: 100%;
     max-height: 100%;
