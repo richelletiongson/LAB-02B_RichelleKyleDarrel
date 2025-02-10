@@ -191,10 +191,41 @@ video {
 
   .work-box__hovertext {
     position: absolute;
-    bottom: 10%;
-    left: 10%;
+    bottom: -129px;
+    left: 16px;
     opacity: 0;
     transition: opacity 0.3s ease;
+  }
+
+  .work-box__headinginfo {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18.8;
+    margin: 0;
+  }
+
+  .work-box__topic {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 12.64px;
+    margin: 0;
+    position: relative;
+    top: -139px;
+  }
+
+  .work-box__hovericon {
+    position: absolute;
+    width: 28px; 
+    height: 28px;
+    background-color: #1596BD;
+    bottom: 13px;
+    right: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .work-box:hover .work-box__hovericon {
+    opacity: 1;
   }
 
   .work-box:hover .work-box__hoveroverlay {
