@@ -81,29 +81,11 @@ video {
    }
 
    .banner {
-    position: absolute;
+    position: middle;
     width: 1465.6px;
     height: 531px;
     left: 201px;
     top: -8px;
-   }
-
-   .slider {
-   position: absolute;
-   left: 0%;
-   right: 0%;
-   top: 0%;
-   bottom: 0%;
-   background: #EBEBEB;
-   }
-
-   .slider_content {
-    position: absolute;
-    left: 14.43%;
-    right: 14.5%;
-    top: 0%;
-    bottom: 0%;
-    background: #FFFFFF;
    }
 
 
