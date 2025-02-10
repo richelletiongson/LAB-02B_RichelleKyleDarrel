@@ -430,10 +430,190 @@ video {
     max-height: 100%;
   }
 
+/* Background Colours */
+  .nav_background {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
 
-
+  .slider_background{
+    background-color: #EBEBEB;
+    width: 1441px;
+    height: 512px;
+  }
   
+  .section_background{
+    background-color: #ffffff;
+    color: #3C3C3C;
+  }
+  
+  .footer_background{
+    background-color: #0E2E4E;
+    width: 1440px;
+    height: 598px;
+  }
 
+  /* Main Menu */
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 210px;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-start;
+  }
+  
+  .nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: flex-end;
+    width: 134px;
+    height: 96px;
+    color: #ffffff;
+    padding-right: 15px;
+  }
+
+  .nav-item:hover{
+    background-color: #F0F08C;
+    color: #0057C2; 
+  }
+
+  .home_button {
+    background-color: #25C389;
+  }
+  
+  .portfolio_button {
+    background-color: #FFB901;
+  }
+  
+  .blog_button {
+    background-color: #DE6262;
+  }
+  
+  .quo-vadis_button {
+    background-color: #19B2DE;
+  }
+  
+  .lets-chat_button {
+    background-color: #265787;
+  }
+
+  .h2{
+    color: #3C3C3C;
+    font-family: "Ubuntu", serif;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+    align-self: stretch;
+  }
+  
+  .serivice-item__header{
+    color: #545454;
+    text-align: center;
+    font-family: "Ubuntu", serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 18px;
+    align-self: stretch;
+  }
+  
+  .service-item{
+    display: flex;
+    width: 232px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .service-item__text{
+    color: #939393;
+    text-align: justify;
+    font-family: "Ubuntu", serif;
+    font-size: 12px;
+    align-self: stretch;
+    font-weight: 400;
+  }
+  
+  .section__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .blue-text{
+    color: #1EAFDE;
+  }
+  
+  .company_info{
+    text-align: center;
+    align-self: stretch;
+  }
+
+/* Slider Section */
+  .banner{
+    position: absolute;
+    color: #3C3C3C;
+    font-family: "Ubuntu", serif;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .blue{
+    width: 171px;
+    left: 256px;
+    top: 348px;
+  }
+  
+  .red{
+    width: 236px;
+    left: 256px;
+    top: 416px;
+  }
+  
+  .orange{
+    width: 315px;
+    left: 256px;
+    top: 484px;
+  }
+
+/* Tablet Media Queries */
+@media only screen and (max-width: 632px){
+  .nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 64px;
+    width: 126px;
+  }
+}
+
+/* Mobile Media Queries */
+@media only screen and (max-width: 432px){
+  .mobile_hidden-item{
+    display:none;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
