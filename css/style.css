@@ -63,18 +63,17 @@ video {
     line-height: 32.17px;
     color: #494949;
     margin-bottom: 0;
-   }/*how accurate must spacings be?*/
+   }
 
    .section__subtitle {
-    font-family: 'Myriad Pro Regular', serif;
     font-size: 11px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     line-height: 13.2px;
     color: #A2A2A2;
     margin-top: 5px;
     margin-bottom: 35px;
-   } /*font not working*/
+   }
 
    .section__content {
     display: flex;
@@ -179,6 +178,17 @@ video {
     transition: opacity 0.3s ease;
   }
 
+  .work-box__hovericon {
+    position: absolute;
+    width: 28px; 
+    height: 28px;
+    background-color: #1596BD;
+    bottom: 13px;
+    right: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
   .work-box__hovertext {
     position: absolute;
     bottom: 10%;
@@ -193,7 +203,10 @@ video {
 
   .work-box:hover .work-box__hovertext {
     opacity: 1;
-    font-weight: 300;
+  }
+
+  .work-box:hover .work-box__hovericon {
+    opacity: 1;
   }
 
   .section__contentimages {
