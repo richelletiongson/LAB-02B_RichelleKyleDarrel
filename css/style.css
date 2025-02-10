@@ -10,451 +10,729 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  color: #222;
-  font-family: "Ubuntu", serif;
-  /*font-size: 1em;*/
-  line-height: 1.4;
-}
-
-@font-face {
-  font-family: 'Myriad Pro Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+   * {
+    box-sizing: border-box;
   }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-   .section__title {
-    font-size: 26px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 32.17px;
-    color: #494949;
-    margin-bottom: 0;
-   }/*how accurate must spacings be?*/
-
-   .section__subtitle {
-    font-family: 'Myriad Pro Regular', serif;
-    font-size: 11px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 13.2px;
-    color: #A2A2A2;
-    margin-top: 5px;
-    margin-bottom: 35px;
-   } /*font not working*/
-
-   .section__content {
-    max-width: 1010 px;
-    height: 537 px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 60px;
-   }
-
-   .banner {
-    position: middle;
-    width: 1465.6px;
-    height: 531px;
-    left: 201px;
-    top: -8px;
-   }
-
-
-
-   .calendar-item {
+  
+   html, body {
+    min-height: 100vh;
+    color: #222;
     font-family: "Ubuntu", serif;
-    font-weight: 400;
-    width: 320px;
-    height: 256px;
-    color: white;
-    background-color: burlywood; /*place-holder*/
-    position: relative;
-   }
-
-   .calendar-item__date {
-    width: 56px;
-    height: 34.28px;
-    text-align: center;
-    background-color: #D8605F;
+    line-height: 1.4;
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   }
-
-   .calendar-item__heading { 
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 18.38px;
-    margin: 0;
-   }
-
-  .calendar-item__subtitle {
-    font-size: 8px;
-    font-weight: 300; 
-    line-height: 9.19px;
-    margin: 0;
   }
-
-  .calendar-item__info {
-    width: 320px;
-    height: 48px;
-    text-align: left;
-    font-weight: 400;
-    background-color: #19B2DE;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .calendar-item__topic {
-    font-size: 11px;
-    font-weight: 300;
-    line-height: 12.64px;
-    margin: 0;
-  }
-
-  .calendar-item__icon {
-    width: 28px;
-    height: 28px;
-    background-color: #1596BD; /*place-holder for calendar image*/
-    justify-self: end;
-    margin-left: auto;
-  }
-
-  .work-box {
-    width: 320px;
-    height: 256px;
-    background-color: burlywood; /*place-holder*/
-  }
-
-  .section__contentimages {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    max-width: 1010px; 
-    margin: 0 auto 60px;
-    gap: 25px;
-  } 
-
-  .logo-box__image {
-    width: 179px;
-    height: 128px;
-    background-color: #F3F3F3;
-    display: flex;  
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    gap: 10px;
-  }
-
-  .footer__content {
-
-  }
-
-  .footer {
-    position: absolute;
-    width: 1440px;
-    height: 598px;
-    left: 0px;
-    top: 2623px;    
-  }
-
-  .footer-figure__image {
-
-  }
-
-  .footer-figure__caption {
-  width: 546px;
-  height: 72px;
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: #FFFFFF;
-  flex: none;
-  order: 1;
-  flex-grow: 1;
-  }
-
-  .footer-section {
-
-  }
-
-  .aboutus__par {
-
-  width: 232px;
-  height: 246px;
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: black;
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
-
-  }
-
-  .footer-section__About_Us_heading {
-    color: #FFB901;
-  }
-
-  .footer-section__Instagram_heading {
-    color: #DE6262;
-  }
-
-  .footer-section__Mastodon_heading {
-    color: #1691BD;
-  }
-
-  .mastodon__par {
-  width: 320px;
-  height: 98px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 9px;
-  line-height: 14px;
-  text-align: justify;
-  color: black;
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
-  }
-
   
-  .background_color-bar {
-  position: bottom;
-  width: 272px;
-  height: 17px;
-  right: 960px;
-  top: 581px;
-  }
-
-  .background_blue-bar {
-  position: bottom;
-  width: 54.4px;
-  height: 17px;
-  left: 425.6px;
-  bottom: 0px;
-
-  background: #166BA2;
-  }  
-
-  .background_light-blue-bar {
-  position: bottom;
-  width: 54.4px;
-  height: 17px;
-  left: 371.2px;
-  bottom: 0px;
-
-  background: #1691BD;
-  }
-
-  .background_red-bar {
-  position: bottom;
-  width: 54.4px;
-  height: 17px;
-  left: 316.8px;
-  bottom: 0px;
-
-  background: #DE6262;
-  }
-
-  .background_orange-bar {
-  position: bottom;
-  width: 54.4px;
-  height: 17px;
-  left: 262.4px;
-  bottom: 0px;
-
-  background: #FFB901;
-  }
-
-  .background_green-bar {
-  position: bottom;
-  width: 54.4px;
-  height: 17px;
-  left: 208px;
-  bottom: 0px;
-
-  background: #25C389;
-  }
-
-
-<<<<<<< HEAD
-=======
-
-
-
+  @font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+    }
   
->>>>>>> 87c918848df8b3d60ea291ff94b134d9b4afe6ba
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+     .section__title {
+      font-size: 26px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 32.17px;
+      color: #494949;
+      margin-bottom: 0;
+     }
+  
+     .section__subtitle {
+      font-size: 11px;
+      font-weight: 300;
+      text-align: center;
+      line-height: 13.2px;
+      color: #A2A2A2;
+      margin-top: 5px;
+      margin-bottom: 35px;
+     }
+  
+     .section__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 60px;
+     }
+  
+     .calendar-item {
+      font-family: "Ubuntu", serif;
+      font-weight: 400;
+      color: white;
+      background-color: burlywood; /*place-holder*/
+      position: relative;
+     } 
+  
+     .calendar-item__date {
+      text-align: center;
+      background-color: #D8605F;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+  
+     .calendar-item__heading { 
+      font-weight: 300;
+      line-height: 18.8;
+      margin: 0;
+     }
+  
+    .calendar-item__subtitle {
+      font-weight: 300;
+      line-height: 9.19px;
+      margin: 0;
+      position: relative;
+      top: -141px;
+    }
+  
+    .calendar-item__info {
+      text-align: left;
+      font-weight: 400;
+      background-color: #19B2DE;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    .calendar-item__headinginfo { 
+      font-weight: 300;
+      line-height: 18.8;
+      margin: 0;
+     }
+  
+    .calendar-item__topic {
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 12.64px;
+      margin: 0;
+      position: relative;
+      top: -139px;
+    }
+  
+    .calendar-item__icon {
+      width: 28px;
+      height: 28px;
+      background-color: #1596BD;
+      justify-self: end;
+      margin-left: auto;
+    }
+  
+    .work-box {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      background-color: burlywood; /*place-holder*/
+      text-align: left;
+      color: #fff;
+    }
+  
+    .work-box__image {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+  
+    .work-box__hoveroverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(25, 178, 222, 0.8);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    .work-box__hovericon {
+      position: absolute;
+      width: 28px; 
+      height: 28px;
+      background-color: #1596BD;
+      bottom: 13px;
+      right: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    .work-box__hovertext {
+      position: absolute;
+      bottom: -129px;
+      left: 16px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    .work-box__headinginfo {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 18.8;
+      margin: 0;
+    }
+  
+    .work-box__topic {
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 12.64px;
+      margin: 0;
+      position: relative;
+      top: -139px;
+    }
+  
+    .work-box__hovericon {
+      position: absolute;
+      width: 28px; 
+      height: 28px;
+      background-color: #1596BD;
+      bottom: 13px;
+      right: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    .work-box:hover .work-box__hovericon {
+      opacity: 1;
+    }
+  
+    .work-box:hover .work-box__hoveroverlay {
+      opacity: 1;
+    }
+  
+    .work-box:hover .work-box__hovertext {
+      opacity: 1;
+    }
+  
+    .work-box:hover .work-box__hovericon {
+      opacity: 1;
+    }
+  
+    .section__contentimages {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      width: auto;
+      max-width: max-content;
+      place-items: center;
+      margin: 0px auto 60px;
+      gap: 16px; 
+    }
+  
+    @media screen and (max-width: 631px) {
+      .section__mobilehidden {
+        display: none;
+      }
+      .calendar-item {
+        width: 400px;
+        height: 288px;
+       }
+       .calendar-item__date {
+        width: 50px;
+        height: 54px;
+       }
+       .calendar-item__heading { 
+        font-size: 20px;
+       }
+      .calendar-item__subtitle {
+        font-size: 8px;
+        position: relative;
+        top: -178px;
+      }
+      .calendar-item__info {
+        width: 400px;
+        height: 54px;
+      }
+      .work-box {
+        width: 400px;
+        height: 256px;
+      }
+      .mobile_hidden-item{
+        display:none;
+      }
+    }
+  
+    @media screen and (min-width: 632px) and (max-width: 1439px){
+      .section__contentimages {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 16px 16px; 
+      } 
+      .section__logocontent {
+        display: flex;
+        width: 75%;   
+        justify-self: center;
+        padding: 0 16px;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .calendar-item__info {
+        width: 600px;
+        height: 69px;
+      }
+      .calendar-item {
+        width: 292px;
+        height: 256px;
+       }
+       .calendar-item__date {
+        width: 51px;
+        height: 34px;
+       }
+       .calendar-item__heading { 
+        font-size: 16px;
+       }
+      .calendar-item__subtitle {
+        font-size: 8px;
+      }
+      .calendar-item__info {
+        width: 292px;
+        height: 48px;
+      }
+      .logo-box {
+        width: 189px;
+        height: 128px;
+      }
+      .calendar-item__topic {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 12.64px;
+        margin: 0;
+      }
+      #firstcalendar-item {
+        width: 600px;
+        height: 367px;
+        margin: auto 100% auto 100%;
+        flex-shrink: 0;   
+      }
+      #firstcalendar-item__date {
+        width: 83px;
+        height: 64px;
+      }
+      #firstcalendar-item__heading { 
+        font-size: 28px;
+       }
+      #firstcalendar-item__headinginfo {
+        font-size: 24px;
+      }
+      #firstcalendar-item__subtitle {
+        font-size: 14px;
+        position: relative;
+        top: -245px;
+      }
+      #firstcalendar-item__info {
+        width: 600px;
+        height: 69px;
+      }
+      #firstcalendar-item__topic {
+        font-size: 14px;
+        position: relative;
+        top: -210px;
+      }
+      #firstcalendar-item__icon {
+        width: 36px;
+        height: 36px;
+      }
+      .work-box {
+        width: 292px;
+        height: 256px;
+      }
+      .nav-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        height: 64px;
+        width: 126px;
+      }
+    }
+    
+    @media screen and (min-width: 1440px) {
+      .section__contentimages {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr); 
+        gap: 32px 32px;
+      }  
+      .section__logocontent{
+        display: flex;
+        padding: 0px 16px;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 32px;
+        flex-wrap: wrap;
+        place-self: center;
+      }
+      .logo-box {
+        width: 179px;
+        height: 128px;
+      }
+      .calendar-item {
+        width: 320px;
+        height: 256px;
+       }
+       .calendar-item__date {
+        width: 56px;
+        height: 34.28px;
+       }
+       .calendar-item__heading { 
+        font-size: 16px;
+       }
+      .calendar-item__subtitle {
+        font-size: 8px;
+      }
+      .calendar-item__info {
+        width: 320px;
+        height: 48px;
+      }
+      .calendar-item__topic {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 12.64px;
+        margin: 0;
+      }
+      .work-box {
+        width: 320px;
+        height: 256px;
+      }
+    }
+  
+    .logo-box {
+      background-color: #F3F3F3;
+      display: flex;  
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .logo-box__image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  
+  /* Background Colours */
+    .nav_background {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+    }
+  
+    .slider_background{
+      background-color: #EBEBEB;
+      width: 1441px;
+      height: 512px;
+    }
+    
+    .section_background{
+      background-color: #ffffff;
+      color: #3C3C3C;
+    }
+    
+    .footer_background{
+      background-color: #0E2E4E;
+      width: 1440px;
+      height: 598px;
+    }
+  
+    /* Main Menu */
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding-right: 210px;
+      flex-direction: column;
+      align-items: flex-end;
+      align-content: flex-start;
+    }
+    
+    .nav__list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .nav-item {
+      display: flex;
+      align-items: flex-end;
+      width: 134px;
+      height: 96px;
+      color: #ffffff;
+      padding-right: 15px;
+    }
+  
+    .nav-item:hover{
+      background-color: #F0F08C;
+      color: #0057C2; 
+    }
+  
+    .home_button {
+      background-color: #25C389;
+    }
+    
+    .portfolio_button {
+      background-color: #FFB901;
+    }
+    
+    .blog_button {
+      background-color: #DE6262;
+    }
+    
+    .quo-vadis_button {
+      background-color: #19B2DE;
+    }
+    
+    .lets-chat_button {
+      background-color: #265787;
+    }
+  
+    .h2{
+      color: #3C3C3C;
+      font-family: "Ubuntu", serif;
+      font-size: 34px;
+      font-weight: 400;
+      text-align: center;
+      align-self: stretch;
+    }
+    
+    .serivice-item__header{
+      color: #545454;
+      text-align: center;
+      font-family: "Ubuntu", serif;
+      font-size: 16px;
+      font-weight: 700;
+      height: 18px;
+      align-self: stretch;
+    }
+    
+    .service-item{
+      display: flex;
+      width: 232px;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    
+    .service-item__text{
+      color: #939393;
+      text-align: justify;
+      font-family: "Ubuntu", serif;
+      font-size: 12px;
+      align-self: stretch;
+      font-weight: 400;
+    }
+    
+    .section__text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .blue-text{
+      color: #1EAFDE;
+    }
+    
+    .company_info{
+      text-align: center;
+      align-self: stretch;
+    }
+  
+  /* Slider Section */
+    .banner{
+      position: absolute;
+      color: #3C3C3C;
+      font-family: "Ubuntu", serif;
+      font-size: 24px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+    
+    .blue{
+      width: 171px;
+      left: 256px;
+      top: 348px;
+    }
+    
+    .red{
+      width: 236px;
+      left: 256px;
+      top: 416px;
+    }
+    
+    .orange{
+      width: 315px;
+      left: 256px;
+      top: 484px;
+    }
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Extends the .visually-hidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * The use of `table` rather than `block` is only necessary if using
+   * `::before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
     content: "";
+    display: table;
   }
-
-  pre {
-    white-space: pre-wrap !important;
+  
+  .clearfix::after {
+    clear: both;
   }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
+  
