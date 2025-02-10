@@ -279,6 +279,9 @@ video {
       width: 400px;
       height: 256px;
     }
+    .mobile_hidden-item{
+      display:none;
+    }
   }
 
   @media screen and (min-width: 632px) and (max-width: 1439px){
@@ -366,6 +369,15 @@ video {
     .work-box {
       width: 292px;
       height: 256px;
+    }
+    .nav-item{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      height: 64px;
+      width: 126px;
     }
   }
   
@@ -594,26 +606,6 @@ video {
     left: 256px;
     top: 484px;
   }
-
-/* Tablet Media Queries */
-@media only screen and (max-width: 632px){
-  .nav-item{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    height: 64px;
-    width: 126px;
-  }
-}
-
-/* Mobile Media Queries */
-@media only screen and (max-width: 432px){
-  .mobile_hidden-item{
-    display:none;
-  }
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
