@@ -234,7 +234,12 @@ video {
     color: #ffffff;
     padding-right: 15px;
   }
-  
+
+  .nav-item:hover{
+    background-color: #F0F08C;
+    color: #0057C2; 
+  }
+
   .home_button {
     background-color: #25C389;
   }
