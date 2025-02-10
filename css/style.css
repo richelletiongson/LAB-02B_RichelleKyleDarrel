@@ -205,7 +205,7 @@ video {
 
   .work-box__hovericon {
     position: absolute;
-    width: 28px;
+    width: 28px; 
     height: 28px;
     background-color: #1596BD;
     bottom: 13px;
