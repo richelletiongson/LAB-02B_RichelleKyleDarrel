@@ -88,7 +88,7 @@
       font-family: "Ubuntu", serif;
       font-weight: 400;
       color: white;
-      background-color: burlywood; /*place-holder*/
+      background: burlywood; 
       position: relative;
      } 
   
@@ -100,7 +100,7 @@
       justify-content: center;
       align-items: center;
      }
-  
+
      .calendar-item__heading { 
       font-weight: 300;
       line-height: 18.8;
@@ -610,6 +610,11 @@
       display: flex;
     }
 
+    .footer-figure__image {
+      width: 118px;
+      height: 118px;
+    }
+
     .footer-figure__caption {
       width: 546px;
       height: 72px;
@@ -644,10 +649,6 @@
       font-size: 12px;
       line-height: 18px;
       color: #FFFFFF;
-      flex: none;
-      order: 2;
-      align-self: stretch;
-      flex-grow: 0;
     }
 
     .footer-section__instagram__heading {
@@ -659,6 +660,19 @@
       font-size: 15px;
       line-height: 17px;
       color: #DE6262;
+    }
+
+    .footer-section__instagram__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      padding: 0px;
+      gap: 16px;
+
+      width: 232px;
+      height: 224px;
     }
 
     .instagram-box {
@@ -686,13 +700,13 @@
     .mastodon__par {
       width: 320px;
       height: 98px;
-      font-family: 'Open Sans';
+      font-family: 'Ubuntu';
       font-style: normal;
       font-weight: 700;
       font-size: 9px;
       line-height: 14px;
       text-align: justify;
-      color: #1BADE6;
+      color: #ffffff;
     }
 
     .footer-section__track-us__heading {
